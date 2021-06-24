@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:background="#ADD8E6"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="HELLO WORLD"
+        app:layout_constraintEnd_toStartOf="@id/mid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_down"
+        android:background="#00000000"
+        app:layout_constraintTop_toTopOf="@id/left"
+        app:layout_constraintBottom_toBottomOf="@id/left"
+        app:layout_constraintEnd_toEndOf="@id/left"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/mid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/border"
+        android:text="HELLO WORLD"
+        app:layout_constraintStart_toEndOf="@id/left"
+        app:layout_constraintEnd_toStartOf="@id/right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="HELLO WORLD"
+        android:gravity="center_vertical"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toEndOf="@id/mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_down"
+        android:background="#00000000"
+        app:layout_constraintTop_toTopOf="@id/right"
+        app:layout_constraintBottom_toBottomOf="@id/right"
+        app:layout_constraintEnd_toEndOf="@id/right"
+        android:layout_marginEnd="10dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

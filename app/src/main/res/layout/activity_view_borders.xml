@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/countryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/countrySubTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            tools:text="Hello World"/>
+        <TextView
+            android:id="@+id/countrySubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/area"
+            app:layout_constraintTop_toBottomOf="@id/countryTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="Hello Worlddd"/>
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/borders"
+            app:layout_constraintTop_toBottomOf="@id/countrySubTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Hello Worldddd"/>
+        <TextView
+            android:id="@+id/borders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/area"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Hello Worldddd"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
